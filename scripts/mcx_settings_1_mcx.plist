@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mcx_application_data</key>
+	<dict>
+		<key>com.apple.MCX</key>
+		<dict>
+			<key>Forced</key>
+			<array>
+				<dict>
+					<key>mcx_preference_version_2</key>
+					<dict>
+						<key>mcx_preference_settings</key>
+						<dict>
+							<key>com.apple.universalaccess.flash_screen</key>
+							<false/>
+							<key>com.apple.universalaccess.seeing_switch_to</key>
+							<integer>0</integer>
+						</dict>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

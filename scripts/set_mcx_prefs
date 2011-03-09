@@ -1,0 +1,21 @@
+# set_mcx_prefs
+# SCRIPT_DIR variable must be set first!
+
+# PZINGG install the managed preferences using dscl
+echo "setting managed preferences"
+MCX_FLAGS=`cat "$SCRIPT_DIR/mcx_flags.plist"`
+/usr/bin/dscl . -create /Users/student mcx_flags "${MCX_FLAGS}"
+MCX_SETTINGS=`cat "$SCRIPT_DIR/mcx_settings_0_loginwindow.plist"`
+/usr/bin/dscl . -create /Users/student mcx_settings "${MCX_SETTINGS}"
+MCX_SETTINGS=`cat "$SCRIPT_DIR/mcx_settings_1_mcx.plist"`
+/usr/bin/dscl . -append /Users/student mcx_settings "${MCX_SETTINGS}"
+MCX_SETTINGS=`cat "$SCRIPT_DIR/mcx_settings_2_dictionary.plist"`
+/usr/bin/dscl . -append /Users/student mcx_settings "${MCX_SETTINGS}"
+MCX_SETTINGS=`cat "$SCRIPT_DIR/mcx_settings_3_systempreferences.plist"`
+/usr/bin/dscl . -append /Users/student mcx_settings "${MCX_SETTINGS}"
+MCX_SETTINGS=`cat "$SCRIPT_DIR/mcx_settings_4_universalaccess.plist"`
+/usr/bin/dscl . -append /Users/student mcx_settings "${MCX_SETTINGS}"
+MCX_SETTINGS=`cat "$SCRIPT_DIR/mcx_settings_5_applicationaccess.plist"`
+/usr/bin/dscl . -append /Users/student mcx_settings "${MCX_SETTINGS}"
+MCX_SETTINGS=`cat "$SCRIPT_DIR/mcx_settings_6_dock.plist"`
+/usr/bin/dscl . -append /Users/student mcx_settings "${MCX_SETTINGS}"

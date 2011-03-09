@@ -1,0 +1,40 @@
+#!/bin/sh
+
+# postflight for create_user script. 
+# Original code from instadmg.googlecode.com
+# svn checkout http://instadmg.googlecode.com/svn/trunk/AddOns/createUser/createUser.pkg/Contents/Resources
+
+# Script variables from Apple Software Delivery Guide documentation
+# $1:              Full path to the installation package the Installer 
+#     application is processing. 
+#     For example:  /Volumes/Users/michelle/Desktop/Levon.mpkg
+# $2:              Full path to the installation destination.
+#     For example: /Applications
+# $3:              Installation volume (or mountpoint) to receive the payload. 
+#     For example: / or /Volumes/Tools
+# $4:              The root directory for the system: /
+# $SCRIPT_NAME:    Filename of the operation executable.
+#     For example: preflight
+# $PACKAGE_PATH:   Full path to the installation package. Same as $1.
+# $INSTALLER_TEMP: Scratch directory used by Installer to place its 
+#     temporary work files. Install operations may use this area for their 
+#     temporary work, too, but must not overwrite any Installer files. The 
+#     Installer application erases this directory at the end of the install. 
+#     For example: /private/tmp/.Levon.pkg.897.install
+# $RECEIPT_PATH:   Full path to a temporary directory containing the
+#     operation executable. This is a subdirectory of $INSTALLER_TEMP. 
+#     This location may vary between installs. The executable can use this 
+#     path to locate other files in the package. For example:
+#     /private/tmp/.Levon.pkg.897.install/Receipts/Levon.pkg/Contents/Resources
+
+ME=$0
+SCRIPT_DIR="$1/Contents/Resources"
+TARGET_DIR="$3"
+
+# set up mcx preferences (Dock, etc) in NetInfo or dslocal
+. "${SCRIPT_DIR}/set_mcx_prefs"
+
+# Use the 'kickstart' function of the apple remote desktop agent to turn access on for the just-created user
+#/System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -on -users $shortname -privs -all -restart -agent -target "$3"
+
+exit 0

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mcx_application_data</key>
+	<dict>
+		<key>loginwindow</key>
+		<dict>
+			<key>Forced</key>
+			<array>
+				<dict>
+					<key>mcx_preference_settings</key>
+					<dict>
+						<key>AutoLaunchedApplicationDictionary-raw</key>
+						<array/>
+						<key>DisableLoginItemsSuppression</key>
+						<false/>
+						<key>LoginUserMayAddItems</key>
+						<false/>
+					</dict>
+					<key>mcx_union_policy_keys</key>
+					<array>
+						<dict>
+							<key>mcx_input_key_names</key>
+							<array>
+								<string>AutoLaunchedApplicationDictionary-raw</string>
+							</array>
+							<key>mcx_output_key_name</key>
+							<string>AutoLaunchedApplicationDictionary-managed</string>
+							<key>mcx_remove_duplicates</key>
+							<true/>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

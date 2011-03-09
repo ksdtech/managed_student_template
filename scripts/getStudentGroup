@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+import grp
+
+def get_student_group():
+  try:
+    return grp.getgrgid(502)[0]
+  except:
+    return None
+
+g_student = get_student_group()
+if g_student is None: 
+  print ""
+else:
+  print g_student

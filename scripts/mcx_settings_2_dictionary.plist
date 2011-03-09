@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mcx_application_data</key>
+	<dict>
+		<key>com.apple.Dictionary</key>
+		<dict>
+			<key>Forced</key>
+			<array>
+				<dict>
+					<key>mcx_data_timestamp</key>
+					<date>2010-07-23T19:03:28Z</date>
+					<key>mcx_preference_settings</key>
+					<dict>
+						<key>parentalControl</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>
