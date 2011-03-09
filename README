@@ -1,18 +1,36 @@
+managed_student_template - PackageMaker projects for locally-managed
+student images on OS X 10.4.
+
 Source files for PackageMaker to create new student account,
 copy new student User Template ("English.student.lproj")
-and install login hook.
+and install login hook and custom python applications.
 
-Prerequisites on target machine:
+1. Prerequisites on target machine:
 
 OS 10.4.11
 Python 2.6.5
 wxPython 2.8.11
 
-Use Apple Remote Desktop to copy pref items, such as those in "Other Prefs"
-to:
 
-/System/Library/User Template/English.student.lproj/Library/Preferences
-
-"scripts" folder contains two postflight scripts, "postflight_full" and
+2. "scripts" folder contains two postflight scripts, "postflight_full" and
 "postflight_small", that will build the managed preferences and install them
 using dscl for OS X 10.4.
+
+3. "payloads" folder contains roots for package payloads
+ - "empty" is for the payload-free build
+ - "small" is for the student template only
+ - "full" is for the full install (student template AND the iHook and 
+ custom python applications)
+ 
+To create the payload, use Apple Remote Desktop to copy pref items, 
+such as those in "Other Prefs" to:
+
+System/Library/User Template/English.student.lproj/Library/Preferences
+
+inside the "small" or "full" payload folders.  Make sure that permissions
+are set up as recommended by PackageMaker.
+
+4. "pm_projects" folder contains the PackageMaker 3.0 documents that specify
+the builds
+ - "payload_free.pmdoc" is for the "empty" payload
+
