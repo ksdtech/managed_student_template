@@ -13,6 +13,6 @@ to:
 
 /System/Library/User Template/English.student.lproj/Library/Preferences
 
-"scripts" folder contains two postflight scripts, "postflight-full" and
-"postflight-small" that will build the managed preferences and install them
+"scripts" folder contains two postflight scripts, "postflight_full" and
+"postflight_small", that will build the managed preferences and install them
 using dscl for OS X 10.4.
