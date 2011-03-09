@@ -1,0 +1,5 @@
+.DS_Store
+.bundle
+*.tgz
+*.bom
+*.pkg
