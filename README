@@ -1,0 +1,18 @@
+Source files for PackageMaker to create new student account,
+copy new student User Template ("English.student.lproj")
+and install login hook.
+
+Prerequisites on target machine:
+
+OS 10.4.11
+Python 2.6.5
+wxPython 2.8.11
+
+Use Apple Remote Desktop to copy pref items, such as those in "Other Prefs"
+to:
+
+/System/Library/User Template/English.student.lproj/Library/Preferences
+
+"scripts" folder contains two postflight scripts, "postflight-full" and
+"postflight-small" that will build the managed preferences and install them
+using dscl for OS X 10.4.
