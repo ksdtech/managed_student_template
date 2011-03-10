@@ -34,3 +34,68 @@ are set up as recommended by PackageMaker.
 the builds
  - "payload_free.pmdoc" is for the "empty" payload
 
+5. Owner/Group settings for payloads
+
+System
+ - Library
+ --- Frameworks
+ ----- JavaVM.framework
+ ------- Versions
+ --------- CurrentJDK
+ ----------- Home
+ ------------- lib
+ --------------- ext
+ ----------------- aleksPack10.jar
+ --- User Template
+ ----- English.student.lproj
+ ------- Desktop
+ ------- Documents
+ ------- Library
+ ------- Movies
+ ------- Music
+ ------- Pictures
+ ------- Public
+ ------- Sites
+ ------- .alice
+ ------- .bash_history
+ ------- .bash_profile
+ ------- .config
+ ------- .fontconfig
+ 
+Users
+ - Shared
+ --- Administrative
+ ----- Backpack
+ ------- Backpack.app
+ --------- Contents
+ ----------- Info.plist
+ ----------- MacOS
+ ----------- PkgInfo
+ ----------- Resources
+ ------------- lib
+ --------------- python2.6
+ ----------------- config
+ ----------------- site.py
+ ------------- __boot__.py
+ ------------- __error__.sh
+ ------------- site.py
+ ------------- site.pyc
+ ------- Backpack.icns
+ ------- .Backpack.py
+ ----- iHook
+ ------- iHook.app
+ --------- Contents
+ ----------- Info.plist
+ ----------- MacOS
+ ----------- PkgInfo
+ ----------- Resources
+ ------- login.hook
+ ------- triskele2.png
+ ----- Wallpapers
+ ------- Bacich
+ --------- *.png
+ ----- bouncer
+ ----- refreshHomeDir5.py
+ ----- rsyncExclude
+ --- StudentBackups
+ ----- _Lost_and_Found.sparseimage
